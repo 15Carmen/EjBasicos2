@@ -5,20 +5,22 @@ import java.util.Scanner;
 public class EjBasicos {
     public static void main(String[] args) {
 
-        //Creo el Scanner para leer por teclado
-        Scanner sc = new Scanner (System.in);
+        //Declaramos el scanner para poder leer por consola
+        Scanner sc = new Scanner(System.in);
 
-        //Le pedimos la edad al usuario
+        //Declaramos las variables edad y edadViejo
+        int edad, edadViejo;
+
+        //Le pedimos al usuario que introduzca su edad y guardamos la respuesta en la
+        //variable homónima previamente declarada
         System.out.println("Introduzca su edad:");
+        edad = sc.nextInt();
 
-        //Declaro la variable edad donde se guarda la edad introducida y la guardo
-        int edad=sc.nextInt();
+        //Calculamos cuantos años tendrá el proximo año sumándole 1 a su edad actual
+        edadViejo = edad + 1;
 
-        //Declaro la variable edadViejo donde le añado un año a la edad introducida
-        int edadViejo= edad+1;
-
-        //Muestro edadViejo por consola
-        System.out.println("El año que viene tendrás:"+edadViejo);
+        //Mostramos por consola la edad del usuario el próximo año
+        System.out.println("El año que viene tendrás:" + edadViejo);
 
     }
 }
